@@ -1,16 +1,13 @@
-let string = "";
-
-const repeatString = function(words,num) {
+const repeatString = function(string,num) {
+    let sentence = '';
     if (num < 0) {
-        return "ERROR"
-    }
-
-    let string = '';
-
+        return 'ERROR'
+    } else {
     for (let i = 0; i < num; i++) {
-        string += words;
+        sentence += string;
     }
-    return string;
+    return sentence;
+}
 };
 
 repeatString('hey', 3);
